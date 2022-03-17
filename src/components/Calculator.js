@@ -4,7 +4,7 @@ import './Calculator.css';
 
 const Calculator = () => {
   const [state, setState] = useState({
-    total: '0',
+    total: null,
     next: null,
     operation: null,
   });
@@ -36,12 +36,12 @@ const Calculator = () => {
     '=',
   ];
   const operations = '+-x÷=';
-  const { total, next } = state;
+  const { total, next, operation } = state;
 
   return (
     <section className="calculator">
       {total ? (
-        <div className="input">{total}</div>
+        <div className="input">{`${total} ${operation ?? ''} ${next ?? ''}`}</div>
       ) : (
         <div className="input">{next}</div>
       )}
