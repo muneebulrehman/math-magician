@@ -40,7 +40,7 @@ const Calculator = () => {
 
   return (
     <div className="wrapper">
-      <h2>Let's do some math!</h2>
+      <h2 className="h2">Let&apos;s do some math!</h2>
       <section className="calculator">
         {total ? (
           <div className="input">{`${total} ${operation ?? ''} ${next ?? ''}`}</div>
@@ -54,7 +54,9 @@ const Calculator = () => {
               key={btn}
               name={btn}
               className={`btn ${operations.includes(btn) ? 'operations' : ''}
-           ${btn === '0' ? 'span-large' : ''}`} onClick={handleClick}>
+              ${btn === '0' ? 'span-large' : ''}`}
+              onClick={handleClick}
+            >
               {btn}
             </button>
           ))}
