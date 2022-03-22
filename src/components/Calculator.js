@@ -39,27 +39,30 @@ const Calculator = () => {
   const { total, next, operation } = state;
 
   return (
-    <section className="calculator">
-      {total ? (
-        <div className="input">{`${total} ${operation ?? ''} ${next ?? ''}`}</div>
-      ) : (
-        <div className="input">{next}</div>
-      )}
-      <div className="buttons">
-        {btns.map((btn) => (
-          <button
-            type="button"
-            key={btn}
-            name={btn}
-            className={`btn ${operations.includes(btn) ? 'operations' : ''}
-           ${btn === '0' ? 'span-large' : ''}`}
-            onClick={handleClick}
-          >
-            {btn}
-          </button>
-        ))}
-      </div>
-    </section>
+    <div className="wrapper">
+      <h2 className="h2">Let&apos;s do some math!</h2>
+      <section className="calculator">
+        {total ? (
+          <div className="input">{`${total} ${operation ?? ''} ${next ?? ''}`}</div>
+        ) : (
+          <div className="input">{next}</div>
+        )}
+        <div className="buttons">
+          {btns.map((btn) => (
+            <button
+              type="button"
+              key={btn}
+              name={btn}
+              className={`btn ${operations.includes(btn) ? 'operations' : ''}
+              ${btn === '0' ? 'span-large' : ''}`}
+              onClick={handleClick}
+            >
+              {btn}
+            </button>
+          ))}
+        </div>
+      </section>
+    </div>
   );
 };
 

@@ -1,0 +1,11 @@
+.quote {
+  display: flex;
+  height: 80vh;
+  justify-content: center;
+  align-items: center;
+  padding: 0 4rem;
+}
+
+.quote h2 {
+  width: 60%;
+}

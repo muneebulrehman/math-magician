@@ -1,0 +1,28 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+}
+
+.navbar h1 {
+  font-size: 2.5rem;
+}
+
+.navbar ul {
+  display: flex;
+  gap: 1rem;
+  font-size: 1.5rem;
+  list-style-type: none;
+  font-weight: bold;
+  align-items: center;
+}
+
+.navbar ul li {
+  cursor: pointer;
+}
+
+.vl {
+  height: 2rem;
+  width: 4px;
+  background-color: black;
+}

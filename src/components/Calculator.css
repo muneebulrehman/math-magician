@@ -1,6 +1,21 @@
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  margin-top: 4rem;
+  justify-content: space-between;
+}
+
+.h2 {
+  margin-left: 3rem;
+  font-size: 2rem;
+}
+
 .calculator {
   display: flex;
   flex-direction: column;
+  justify-content: flex-end;
+  padding: 0 5rem;
+  width: 60%;
 }
 
 .input {
@@ -8,6 +23,7 @@
   text-align: right;
   background-color: #a3a2a2;
   color: white;
+  height: 5rem;
 }
 
 .buttons {
@@ -19,6 +35,8 @@
   background-color: #d3d2d2;
   padding: 1rem 0;
   border: 1px solid #a5a4a4;
+  height: 4rem;
+  font-size: 1.5rem;
 }
 
 .btn.operations {
