@@ -1,5 +1,8 @@
 # Math-magician
 
+## Live link
+- Heroku:  [Link](https://mymathmagician.herokuapp.com/calculator)
+
 Additional description about the project and its features.
 - (Phase 1) Make simple calculations
 
