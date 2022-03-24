@@ -2,6 +2,7 @@
 
 ## Live link
 - Heroku:  [Link](https://mymathmagician.herokuapp.com/calculator)
+- Netlify: [Link](https://mymath-magician.netlify.app/)
 
 Additional description about the project and its features.
 - (Phase 1) Make simple calculations
